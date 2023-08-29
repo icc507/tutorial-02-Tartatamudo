@@ -11,8 +11,14 @@ t = input().split()
 m = []
 
 num = len(t)-1
+for i in range(len(t)):
+    try:
+        t[i] = int(t[i])
+    except ValueError:
+        continue
 
 for i in range(len(t)):
     m.append(t[num])
     num = num - 1
+
 print (tuple(m))
