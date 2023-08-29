@@ -9,6 +9,19 @@
 #		  mundo 44
 #La salida debe ser
 #         ('mundo', 44, 20, 90, 'hola', 'mundo', 44)
-t = input()
-m = input()
-print(m)
+t = input().split()
+m = input().split()
+
+for i in range(len(t)):
+    try:
+        t[i] = int(t[i])
+    except ValueError:
+        continue
+
+for i in range(len(m)):
+    try:
+        m[i] = int(m[i])
+    except ValueError:
+        continue
+
+print(tuple(m) + tuple(t) + tuple(m))
