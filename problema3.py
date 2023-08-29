@@ -35,6 +35,5 @@ t.pop(0)
 print(t)
 for i in t:
 	insertaEnArbolBinario(w, i)
-
-print("El árbol")
+	
 print(w)
