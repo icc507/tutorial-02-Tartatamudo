@@ -32,7 +32,6 @@ def insertaEnArbolBinario(arbol,numero):
 
 w = arbolBinario(t[0])
 t.pop(0)
-print(t)
 for i in t:
 	insertaEnArbolBinario(w, i)
 	
